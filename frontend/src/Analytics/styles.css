@@ -1,0 +1,12 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 3 columns with equal width */
+    grid-gap: 10px; /* Adds gap between grid items */
+  }
+  
+  .grid-item {
+    /* height: 150px; */
+    background-color: #94adc3aa;
+    padding: 20px;
+    text-align: center;
+  }
