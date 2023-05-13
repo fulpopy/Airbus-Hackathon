@@ -101,14 +101,15 @@ const AirlinesDashboard = () => {
               "mt-9" `}
           >
             <MdOutlineListAlt className="w-[22px] h-[22px] " />
-            <span
+            <Link
+              to="/user/analytics"
               className={`${
                 !open && "hidden"
               } origin-left duration-200 text-[#969696] font-medium hover:text-white text-[16px]`}
             >
               {" "}
               Analytics
-            </span>
+            </Link>
           </li>
           {/* <li
             className={`flex  rounded-md p-2 cursor-pointer hover:bg-[#008185] text-black text-sm items-center mb-2 ${
@@ -200,21 +201,39 @@ const AirlinesDashboard = () => {
         <div>
           <div>
             <form action="" className="flex justify-between">
-            
-              <label htmlFor="partName" className="Text-[18px] font-medium ">Select Part: </label>
-              <select name="PartName" id="partName" className="px-4 py-2 my-4 rounded-[5px]">
+              <label htmlFor="partName" className="Text-[18px] font-medium ">
+                Select Part:{" "}
+              </label>
+              <select
+                name="PartName"
+                id="partName"
+                className="px-4 py-2 my-4 rounded-[5px]"
+              >
                   <option value="All">All</option>   {" "}
                 <option value="Fuelsage">Fuelsage</option> {" "}
                 <option value="Wing">Wing</option>
               </select>
 
-              <label htmlFor="Condition" className="Text-[18px] font-medium ">Condition: </label>
-              <select name="Condition" id="partName" className="px-4 py-2 my-4 rounded-[5px]">
+              <label htmlFor="Condition" className="Text-[18px] font-medium ">
+                Condition:{" "}
+              </label>
+              <select
+                name="Condition"
+                id="partName"
+                className="px-4 py-2 my-4 rounded-[5px]"
+              >
                   <option value="All">All</option>   {" "}
                 <option value="Fuelsage">New</option> {" "}
                 <option value="Wing">Used</option>
-              </select><label htmlFor="partName" className="Text-[18px] font-medium">Select Part: </label>
-              <select name="PartName" id="partName" className="px-4 py-2 my-4 rounded-[5px]">
+              </select>
+              <label htmlFor="partName" className="Text-[18px] font-medium">
+                Select Part:{" "}
+              </label>
+              <select
+                name="PartName"
+                id="partName"
+                className="px-4 py-2 my-4 rounded-[5px]"
+              >
                   <option value="All">All</option>   {" "}
                 <option value="Fuelsage">Fuelsage</option> {" "}
                 <option value="Wing">Wing</option>

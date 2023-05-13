@@ -8,6 +8,7 @@ import { AuthProvider } from "./Auth";
 import Analytics from "./Analytics/Analytics";
 import Profile from "./Components/Profile";
 import AirlinesDashboard from "./pages/dashboard/AirlinesDashboard";
+import PartInfo from "./pages/dashboard/PartInfo.jsx";
 export default function App() {
   return (
     <AuthProvider>
@@ -24,9 +25,11 @@ export default function App() {
             <Route path="admin" element={<Admin />} />
           </Route>
           <Route path="/user" element={<PrivateRoutes />}>
-            {/* <Route path="dashboard" element={<AirlinesDashboard />}></Route> */}
+            <Route path="dashboard" element={<AirlinesDashboard />}></Route>
           </Route>
-          <Route path="/dashboard" element={<AirlinesDashboard />}></Route>
+          {/* <Route path="/dashboard" element={<AirlinesDashboard />}></Route> */}
+          <Route path="/partInfo" element={<PartInfo />}></Route>
+          {/* <Route path="analytics" element={<Analytics />} /> */}
         </Routes>
       </BrowserRouter>
     </AuthProvider>
