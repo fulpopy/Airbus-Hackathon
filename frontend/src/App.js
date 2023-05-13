@@ -5,6 +5,7 @@ import Home from "./Components/Home";
 import Admin from "./Components/Admin/Admin";
 import PrivateRoutes from "./Components/PrivateRoutes";
 import { AuthProvider } from "./Auth";
+import AirlinesDashboard from "./pages/dashboard/AirlinesDashboard";
 export default function App() {
   return (
     <AuthProvider>
@@ -16,8 +17,9 @@ export default function App() {
           </Route>
 
           <Route path="/user" element={<PrivateRoutes />}>
-            <Route path="dashboard" element={<Home />}></Route>
+            {/* <Route path="dashboard" element={<AirlinesDashboard />}></Route> */}
           </Route>
+          <Route path="/dashboard" element={<AirlinesDashboard />}></Route>
         </Routes>
       </BrowserRouter>
     </AuthProvider>

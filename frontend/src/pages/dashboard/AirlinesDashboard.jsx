@@ -198,7 +198,29 @@ const AirlinesDashboard = () => {
           </div>
         </div>
         <div>
-          <div></div>
+          <div>
+            <form action="" className="flex justify-between">
+            
+              <label htmlFor="partName" className="Text-[18px] font-medium ">Select Part: </label>
+              <select name="PartName" id="partName" className="px-4 py-2 my-4 rounded-[5px]">
+                  <option value="All">All</option>   {" "}
+                <option value="Fuelsage">Fuelsage</option> {" "}
+                <option value="Wing">Wing</option>
+              </select>
+
+              <label htmlFor="Condition" className="Text-[18px] font-medium ">Condition: </label>
+              <select name="Condition" id="partName" className="px-4 py-2 my-4 rounded-[5px]">
+                  <option value="All">All</option>   {" "}
+                <option value="Fuelsage">New</option> {" "}
+                <option value="Wing">Used</option>
+              </select><label htmlFor="partName" className="Text-[18px] font-medium">Select Part: </label>
+              <select name="PartName" id="partName" className="px-4 py-2 my-4 rounded-[5px]">
+                  <option value="All">All</option>   {" "}
+                <option value="Fuelsage">Fuelsage</option> {" "}
+                <option value="Wing">Wing</option>
+              </select>
+            </form>
+          </div>
         </div>
         {/* <div className="w-[100%] flex flex-col px-4 p-2">
           <div className="flex justify-between">
