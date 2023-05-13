@@ -44,9 +44,10 @@ app.post("/login", (req, res) => {
       return res.json("error");
     }
     if (data.length > 0) {
-      return res.json("Success");
+      // console.log(typeof data);
+      return res.send(data);
     } else {
-      return res.json("Fail");
+      return res.send(null);
     }
   });
 });

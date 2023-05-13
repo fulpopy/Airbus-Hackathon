@@ -50,12 +50,12 @@ export default function SignIn() {
         const err = validation(value);
         setErrors(err);
         if(err.email === "" && err.password === ""){
-          login(value);
           await axios.post('http://localhost:8081/login', value)
           .then(res => {
-            if(res.data === "Success"){
+            if(res.data){
+              login(res.data);
+              console.log(res.data)
               const {email} = value;
-              console.log(email);
               if(email[0] === "admin@company.com") navigate('/user/admin');
               else{
                 navigate('/user/dashboard');

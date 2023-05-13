@@ -20,46 +20,59 @@ const units = [
 ];
 const Analytics = () => {
   return (
-    <div className="grid">
-      <div className="grid-item">
-        <Card>
-          <BarGraph
-            d1={newPartCarbonFoot}
-            d2={recycledPartCarbonFoot}
-            unit={units[0]}
-          />
-        </Card>
-        <Typography variant="h5" component="h5">
-          Carbon Footprint
-        </Typography>
-      </div>
-      <div className="grid-item">
-        <Card>
-          <BarGraph d1={waterUsageNewPart} d2={waterUsageRecycledPart} unit={units[1]}/>
-        </Card>
-        <Typography variant="h5" component="h5">
-          Water Usage
-        </Typography>
-      </div>
-      <div className="grid-item">
-        <Card>
-          <BarGraph d1={landfillWasteNewPart} d2={landfillWasteRecycledPart} unit={units[2]}/>
-        </Card>
-        <Typography variant="h5" component="h5">
-          Landfill Wastet
-        </Typography>
-      </div>
-      <div className="grid-item">
-        <Card>
-          <BarGraph
-            d1={energyConsumptionNewPart}
-            d2={energyConsumptionRecycledPart}
-            unit={units[3]}
-          />
-        </Card>
-        <Typography variant="h5" component="h5">
-          Energy Consumption
-        </Typography>
+    <div>
+      <Typography variant="h3" component="h5">
+        ANALYTICS
+      </Typography>
+      <div className="grid">
+        <div className="grid-item">
+          <Card>
+            <BarGraph
+              d1={newPartCarbonFoot}
+              d2={recycledPartCarbonFoot}
+              unit={units[0]}
+            />
+          </Card>
+          <Typography variant="h5" component="h5">
+            Carbon Footprint
+          </Typography>
+        </div>
+        <div className="grid-item">
+          <Card>
+            <BarGraph
+              d1={waterUsageNewPart}
+              d2={waterUsageRecycledPart}
+              unit={units[1]}
+            />
+          </Card>
+          <Typography variant="h5" component="h5">
+            Water Usage
+          </Typography>
+        </div>
+        <div className="grid-item">
+          <Card>
+            <BarGraph
+              d1={landfillWasteNewPart}
+              d2={landfillWasteRecycledPart}
+              unit={units[2]}
+            />
+          </Card>
+          <Typography variant="h5" component="h5">
+            Landfill Waste
+          </Typography>
+        </div>
+        <div className="grid-item">
+          <Card>
+            <BarGraph
+              d1={energyConsumptionNewPart}
+              d2={energyConsumptionRecycledPart}
+              unit={units[3]}
+            />
+          </Card>
+          <Typography variant="h5" component="h5">
+            Energy Consumption
+          </Typography>
+        </div>
       </div>
     </div>
   );

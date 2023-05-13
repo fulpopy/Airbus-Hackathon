@@ -1,7 +1,7 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Creates 3 columns with equal width */
-    grid-gap: 10px; /* Adds gap between grid items */
+    /* grid-gap: 10px; */
   }
   
   .grid-item {
