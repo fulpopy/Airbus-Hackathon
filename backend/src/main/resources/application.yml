@@ -1,0 +1,10 @@
+server:
+  port:
+      8888
+spring:
+  application:
+    name: aircraft-service
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=Aerothon;
+    username: sa
+    password: Admin1
